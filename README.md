@@ -1,5 +1,5 @@
-# Freekancer 🎯
-Freekancer is a freelance marketplace platform developed using **React.js**. It provides a seamless environment for **freelancers**, **clients**, and **admins** to interact and manage freelance job opportunities effectively.
+# Freelancer 🎯
+Freelancer is a freelance marketplace platform developed using **React.js**. It provides a seamless environment for **freelancers**, **clients**, and **admins** to interact and manage freelance job opportunities effectively.
 ## 🧑‍💻 User Roles
 ### 1. Freelancer
 - Access to a **Job Search** page to find jobs based on specific criteria.
