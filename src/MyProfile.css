@@ -1,0 +1,114 @@
+body{
+  height: 1000px;
+}
+.my-profile-container {
+  max-width: 550px;
+  background: #ffffff;
+  margin: 0 auto;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease-in-out;
+  position: relative; 
+  top: 40px;
+  left: 20%;
+  transform: translateX(-50%);
+}
+
+.my-profile-container:hover {
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+.myprofile-heading {
+  color: white; 
+  background-image: linear-gradient(to right, white, lightblue);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 1px 1px 2px rgb(52, 89, 236);
+  text-align: center;
+  margin-bottom: 15px;
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+
+.my-profile-details {
+  display: flex;
+  flex-direction: column;
+  gap: 15px; 
+}
+
+
+.profile-field {
+  background: #f9f9f9;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); 
+  transition: box-shadow 0.3s ease;
+}
+
+.profile-field:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); 
+}
+
+.profile-field p {
+  font-size: 1rem;
+  color: #444;
+  margin: 0;
+  line-height: 1.4;
+}
+
+.profile-field strong {
+  color: #007bff;
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+
+.my-profile-details input,
+.my-profile-details textarea {
+  width: 100%;
+  padding: 10px 12px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+  margin-top: 5px;
+  transition: border 0.2s ease-in-out;
+}
+
+.my-profile-details input:focus,
+.my-profile-details textarea:focus {
+  border-color: #007bff;
+  outline: none;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.3);
+}
+
+.my-profile-details textarea {
+  resize: vertical;
+  min-height: 80px;
+}
+
+.profile-buttons button {
+  padding: 10px 16px;
+  border: none;
+  border-radius: 6px;
+  background-color: #007bff;
+  color: white;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  margin-right: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.profile-buttons button:hover {
+  background-color: #0056b3;
+}
+
+
+.no-profile-message {
+  text-align: center;
+  color: #888;
+  font-size: 1rem;
+  margin-top: 20px;
+}

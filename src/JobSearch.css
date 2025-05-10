@@ -1,0 +1,133 @@
+.JobSearch-Container {
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.JobSearch-Bar {
+  margin-bottom: 20px;
+}
+
+.JobSearch-Bar input {
+  padding: 10px;
+  width: 300px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+
+.JobSearch-Bar button {
+  padding: 10px 10px;
+  margin-top: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.JobSearch-Bar button:hover {
+  background-color: #0056b3;
+}
+
+.JobSearch-Results {
+  margin-top: 20px;
+}
+
+.JobSearch-ResultItem {
+  border: 1px solid #ddd;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+.job-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px;
+}
+
+.job-card {
+  background: linear-gradient(to bottom, #e0f0ff, #4a90e2);
+  color: #fff;
+  padding: 20px;
+  border-radius: 15px;
+  height: 220px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+}
+
+.job-card h3 {
+  color: #000;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.job-card p {
+  color: #f0f0f0;
+  margin: 5px 0;
+  font-size: 16px;
+}
+
+.job-card strong {
+  color: #000;
+}
+
+.job-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+}
+.modal-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal {
+  background: white;
+  padding: 20px 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  text-align: center;
+}
+
+.modal-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+  width: 90%;
+  max-width:350px;
+}
+
+.modal input {
+  width: 80%;
+  margin: 8px 0;
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.modal button {
+  margin: 10px 5px;
+  padding: 10px 15px;
+  font-size: 14px;
+  cursor: pointer;
+}

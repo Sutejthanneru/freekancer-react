@@ -1,0 +1,281 @@
+.dashboard{
+    width: 100%;
+    height: 100%;
+          background: linear-gradient(to bottom right, #ffffff, #f2f2f2);
+
+
+    display: grid;
+    grid-template-rows: 50px auto;
+    grid-template-columns: 200px auto;
+    
+    gap:2px;
+}
+.header{
+    background-color: white;
+    grid-column: 1/span 2;
+    border-bottom: rgb(0, 0, 0,1) 1px solid;
+    line-height: 50px;
+}
+.menu{
+      background: linear-gradient(to bottom right, #ffffff, #0255fd);
+
+    border-right: 1px solid green;
+}
+
+.outlet{
+    background: linear-gradient(to bottom right, #ffffff, #0255fd);
+
+}
+
+.header .logo{
+    width: 40px;
+    height: 40px;
+    float: left;
+    margin-left: 5px;
+    margin-top: 5px;
+}
+.header .logoText{
+    font-weight: bold;
+    float: left;
+    font-size: 20pt;
+    color: black;
+}
+.header .logoText span{
+    color:  #1d64cd;
+}
+.header .logout
+{
+    width: 40px;
+    float: right;
+    margin-right: 5px;
+    margin-top: 5px;
+}
+.header label
+ {
+    font-size: 15pt;
+    font-weight: bold;
+    float: right;
+    margin-right: 10px;
+}
+.header .logout:hover{
+    cursor: pointer;
+    opacity: 0.76;
+}
+/* Settings button in the top-right corner */
+.settings-button {
+  float: right; /* Aligns the button to the right */
+  margin-right: 60px; /* Adds spacing between the logout button and the settings button */
+  background-color: #007bff;
+  color: white;
+  border: none;
+ margin-top: 8px;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.settings-button:hover {
+  background-color: #0056b3;
+}
+
+/* Settings popup backdrop */
+.popup-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+}
+
+/* Settings popup box */
+.popup {
+  background-color: #fff;
+  border-radius: 12px;
+  padding: 20px;
+  max-width: 800px;
+  width: 90%;
+  margin: 5% auto;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  position: relative;
+}
+
+/* Popup header */
+.popup h3 {
+  margin-top: 0;
+  font-size: 24px;
+  border-bottom: 2px solid #eee;
+  padding-bottom: 10px;
+}
+
+/* Close button */
+.close-button {
+  margin-top: 20px;
+  background-color: #e74c3c;
+  color: white;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+/* Settings tab buttons */
+.settings-menu {
+  display: flex;
+  gap: 10px;
+  margin: 15px 0;
+  flex-wrap: wrap;
+}
+
+.settings-menu button {
+  padding: 8px 12px;
+  background-color: #f1f1f1;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background-color 0.3s ease;
+}
+
+.settings-menu button:hover {
+  background-color: #ddd;
+}
+
+.settings-menu .active-tab {
+  background-color: #3498db;
+  color: white;
+}
+
+/* Popup content area */
+.popup-content {
+  max-height: 400px;
+  overflow-y: auto;
+  padding-right: 5px;
+}
+
+.popup-content h2 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: #2c3e50;
+}
+
+.popup-content h4 {
+  font-size: 16px;
+  margin-top: 15px;
+  color: #34495e;
+}
+
+.popup-content p {
+  font-size: 14px;
+  line-height: 1.6;
+  color: #333;
+}
+
+.popup-content ul {
+  padding-left: 20px;
+  margin-top: 10px;
+}
+
+.popup-content ul li {
+  margin-bottom: 6px;
+  font-size: 14px;
+  color: #555;
+}
+/* Popup layout: vertical sidebar */
+.popup {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  background-color: #fff;
+  border-radius: 12px;
+  padding: 20px;
+  max-width: 900px;
+  width: 90%;
+  margin: 5% auto;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  position: relative;
+}
+
+/* Vertical settings menu */
+.settings-menu {
+  display: flex;
+  flex-direction: column;
+  width: 200px;
+  gap: 10px;
+  padding-right: 10px;
+  border-right: 2px solid #eee;
+}
+
+/* Tab button styles */
+.settings-menu button {
+  padding: 10px 15px;
+  background-color: #f1f1f1;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  text-align: left;
+  font-weight: 500;
+  transition: background-color 0.3s ease;
+}
+
+.settings-menu button:hover {
+  background-color: #ddd;
+}
+
+.settings-menu .active-tab {
+  background-color: #3498db;
+  color: white;
+}
+
+/* Content on right */
+.popup-content {
+  flex: 1;
+  max-height: 400px;
+  overflow-y: auto;
+}
+
+/* Headers and text */
+.popup-content h2 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: #2c3e50;
+}
+
+.popup-content h4 {
+  font-size: 16px;
+  margin-top: 15px;
+  color: #34495e;
+}
+
+.popup-content p {
+  font-size: 14px;
+  line-height: 1.6;
+  color: #333;
+}
+
+.popup-content ul {
+  padding-left: 20px;
+  margin-top: 10px;
+}
+
+.popup-content ul li {
+  margin-bottom: 6px;
+  font-size: 14px;
+  color: #555;
+}
+
+/* Close button */
+.close-button {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  background-color: #e74c3c;
+  color: white;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
